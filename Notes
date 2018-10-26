@@ -1,0 +1,13 @@
+xv6 book notes:
+kernel:特殊程序为所有运行的进程提供服务
+每个程序都分配有内存，包含相关指令，数据，栈(组织程序的procedure call)
+当进程需要调用 kernel service时，会发起一个system call(即procedure call)
+
+cpu硬件保护机制保证每个进程都只用自己的内存
+
+shell只是一个用户使用的程序，不属于kernel，只是利用了system call interface
+
+elf格式：linux的主要可执行文件格式
+
+fork创建子进程，拥有父进程数据的副本
+exec使得子进程可以运行其他程序。
